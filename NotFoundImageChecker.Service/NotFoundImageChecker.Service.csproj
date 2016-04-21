@@ -54,6 +54,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NotFoundImageChecker.Domain\NotFoundImageChecker.Domain.csproj">
+      <Project>{BA5116EE-5BA4-41EC-95F0-CE7BEE39896F}</Project>
+      <Name>NotFoundImageChecker.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
