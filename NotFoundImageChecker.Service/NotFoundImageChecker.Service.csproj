@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C72C1A1A-E74D-4281-ADB2-D02DD3F5AE32}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SexyFishHorse.NotFoundImageChecker</RootNamespace>
     <AssemblyName>SexyFishHorse.NotFoundImageChecker</AssemblyName>
@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SexyFishHorse.NotFoundImageChecker.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,9 +47,6 @@
   <ItemGroup>
     <Compile Include="NotFoundImageCheckerService.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="NotFoundImageCheckerService.Designer.cs">
-      <DependentUpon>NotFoundImageCheckerService.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
